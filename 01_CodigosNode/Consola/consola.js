@@ -1,3 +1,3 @@
-console.log('Informativo');
-console.error('Error');
-console.warn('Advertencia');
+console.log('Informativo (LOG)');
+console.error('Error (ERROR)');
+console.warn('Advertencia (WARN)');
