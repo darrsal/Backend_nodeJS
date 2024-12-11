@@ -36,7 +36,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    const filas = "";
     async function cargarProductos() {
         const response = await fetch('/productos/all');
         const productos = await response.json();
@@ -46,9 +45,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function mostrarProducto(producto) {
-        var row = tableProductos.insertRow(-1);
-        var cell1 = row.insertCell(0);
-        var cell2 = row.insertCell(1);
+        var fila = tableProductos.insertRow(-1);
+        var cell1 = fila.insertCell(0);
+        var cell2 = fila.insertCell(1);
         cell1.innerHTML = producto.nombre;
         cell2.innerHTML = producto.precio;
     }
