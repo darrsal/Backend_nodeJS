@@ -1,0 +1,7 @@
+Comandos para configurar
+npm init -y 
+npm install express
+npm install -g nodemon
+
+Comandos para ejecutar
+node server.js
