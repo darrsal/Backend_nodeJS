@@ -8,19 +8,21 @@ const port = 3000;
 app.use(express.json());
 
 app.use(express.urlencoded({extended:true}));
-app.use(express.static(path.join(__dirname,'public')));
+app.use("/",express.static(path.join(__dirname,'UI')));
+
 
 let productos=[];
 
 app.get('/productos/all',(req,res)=>{
     res.json(productos);
+    
 });
 
 app.post('/productos/add', (req, res) => {
     const nuevoPto = req.body;
     productos.push(nuevoPto);
     res.status(201).json(nuevoPto);
-    console.log("Producto agregado ", nuevoPto);
+    
 });
 
 //Escuchar al servidor
