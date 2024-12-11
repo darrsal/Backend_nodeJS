@@ -18,3 +18,14 @@ formProductoElement.addEventListener('submit', async(e)=>{
         
     });
 });
+
+async function cargarProductos(){
+    const response=await fetch('/productos/all');
+    const productos=await response.json();
+    productos.forEach(mostrarProducto);
+}
+
+function mostrarProducto(producto){
+    const li=document.createElement('li');
+    li.textContent=``;
+}
