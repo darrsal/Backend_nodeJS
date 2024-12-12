@@ -3,60 +3,25 @@
 // Use Ctrl+Space inside a snippet or a string literal to trigger completions.
 
 const database = 'tienda_online';
-const collection = 'NEW_COLLECTION_NAME';
 
 // The current database to use.
 use(database);
 
-// Create a new collection.
-db.createCollection(collection);
-
-// The prototype form to create a collection:
-/* db.createCollection( <name>,
-  {
-    capped: <boolean>,
-    autoIndexId: <boolean>,
-    size: <number>,
-    max: <number>,
-    storageEngine: <document>,
-    validator: <document>,
-    validationLevel: <string>,
-    validationAction: <string>,
-    indexOptionDefaults: <document>,
-    viewOn: <string>,
-    pipeline: <pipeline>,
-    collation: <document>,
-    writeConcern: <document>,
-    timeseries: { // Added in MongoDB 5.0
-      timeField: <string>, // required for time series collections
-      metaField: <string>,
-      granularity: <string>,
-      bucketMaxSpanSeconds: <number>, // Added in MongoDB 6.3
-      bucketRoundingSeconds: <number>, // Added in MongoDB 6.3
-    },
-    expireAfterSeconds: <number>,
-    clusteredIndex: <document>, // Added in MongoDB 5.3
-  }
-)*/
-
-// More information on the `createCollection` command can be found at:
-// https://www.mongodb.com/docs/manual/reference/method/db.createCollection/
-
 db.productos.insertMany([
     {
-        nombre:"computadora",
-        precio:5000,
-        desc:"Para  oficina"
+        nombre:"Monitor Gamer Xundefined",
+        precio:3700,
+        desc:"Xundefined 32 165 Hz X320cr01 Rgb Luces 1500r"
     },
     {
-        nombre:"webcam",
-        precio:900,
-        desc:"vigilancia"
+        nombre:"Silla Escritorio",
+        precio:1400,
+        desc:"Silla Escritorio Ejecutiva Oficina Secretarial Ergonomica"
     },
     {
-        nombre:"audifonos",
-        precio:700,
-        desc:"Audio"
+        nombre:"Batería auto",
+        precio:2600,
+        desc:"Batería Lth 12v 340 Amperes Modelo L-ns40l-340"
     }  
 
 ]);

@@ -24,7 +24,7 @@ const ProductSchema=new mongoose.Schema({
 });
 
 
-const Product=mongoose.model('Product',ProductSchema);
+const Product=mongoose.model('productos',ProductSchema);
 
 const newProduct=Product({
     nombre:'Control',
